@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Placeholder ����� 1">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0b1a2b"/>
+      <stop offset="55%" stop-color="#0f3f55"/>
+      <stop offset="100%" stop-color="#1aa6a8"/>
+    </linearGradient>
+    <radialGradient id="r" cx="25%" cy="25%" r="70%">
+      <stop offset="0%" stop-color="#ffe8b3" stop-opacity=".8"/>
+      <stop offset="100%" stop-color="#ffe8b3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <rect width="1200" height="900" fill="url(#r)"/>
+  <path d="M0,610 C220,560 380,590 560,570 C710,553 820,500 980,515 C1080,525 1145,555 1200,545 L1200,900 L0,900 Z" fill="#07243a" opacity=".65"/>
+  <path d="M0,680 C250,640 430,690 610,670 C760,653 850,615 1020,630 C1120,642 1160,665 1200,655 L1200,900 L0,900 Z" fill="#0a3b57" opacity=".75"/>
+  <path d="M150,650 C260,480 410,420 600,420 C790,420 940,480 1050,650" fill="none" stroke="#d7e4ff" stroke-opacity=".55" stroke-width="10"/>
+  <path d="M110,650 L1090,650" stroke="#f2f6ff" stroke-opacity=".25" stroke-width="14"/>
+  <g fill="none" stroke="#f2f6ff" stroke-opacity=".18" stroke-width="3">
+    <path d="M250,650 L250,560"/>
+    <path d="M350,650 L350,530"/>
+    <path d="M450,650 L450,505"/>
+    <path d="M550,650 L550,485"/>
+    <path d="M650,650 L650,485"/>
+    <path d="M750,650 L750,505"/>
+    <path d="M850,650 L850,530"/>
+    <path d="M950,650 L950,560"/>
+  </g>
+  <text x="600" y="415" text-anchor="middle" font-family="Heebo, Arial, sans-serif" font-size="44" fill="#eaf2ff" fill-opacity=".92">����� ������</text>
+  <text x="600" y="470" text-anchor="middle" font-family="Heebo, Arial, sans-serif" font-size="28" fill="#eaf2ff" fill-opacity=".76">���� " ��� ��</text>
+</svg>

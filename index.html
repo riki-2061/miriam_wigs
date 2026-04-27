@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miriam Rotenberg | פאות בעבודת יד</title>
+    <meta
+      name="description"
+      content="Miriam Rotenberg — ייצור פאות פרימיום בהתאמה אישית. גלריה, אודות, מחירים, המלצות, ויצירת קשר."
+    />
+    <meta name="theme-color" content="#0b1a2b" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">דילוג לתוכן</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div class="brand-text">
+            <div class="brand-title">Miriam Rotenberg</div>
+            <div class="brand-subtitle">ייצור פאות פרימיום בהתאמה אישית</div>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="ניווט ראשי">
+          <a href="#gallery">גלריה</a>
+          <a href="#about">אודות</a>
+          <a href="#pricing">מחירים</a>
+          <a href="#testimonials">לקוחות ממליצים</a>
+          <a class="nav-cta" href="#contact">צור קשר</a>
+        </nav>
+
+        <button class="nav-toggle" type="button" aria-label="פתיחת תפריט" aria-expanded="false">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main" class="main" role="main">
+      <section class="hero" aria-label="פתיח">
+        <div class="hero-bg" aria-hidden="true">
+          <svg class="hero-scene" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#0b1a2b" />
+                <stop offset="55%" stop-color="#103152" />
+                <stop offset="100%" stop-color="#0e2c3f" />
+              </linearGradient>
+              <linearGradient id="lake" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#1aa6a8" stop-opacity="0.55" />
+                <stop offset="100%" stop-color="#0a3b57" stop-opacity="0.9" />
+              </linearGradient>
+              <linearGradient id="mist" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18" />
+                <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+              </linearGradient>
+              <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="6" result="blur" />
+                <feColorMatrix
+                  in="blur"
+                  type="matrix"
+                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.9 0"
+                  result="glow"
+                />
+                <feMerge>
+                  <feMergeNode in="glow" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+
+            <rect width="1200" height="700" fill="url(#sky)" />
+
+            <circle cx="220" cy="140" r="55" fill="#ffe8b3" opacity="0.85" filter="url(#softGlow)" />
+
+            <path
+              d="M0,370 C200,320 380,350 540,330 C680,312 760,250 910,265 C1040,278 1120,330 1200,320 L1200,700 L0,700 Z"
+              fill="#0a2a3f"
+              opacity="0.85"
+            />
+
+            <path
+              d="M0,430 C160,400 320,430 470,410 C610,392 740,340 890,355 C1040,370 1110,430 1200,420 L1200,700 L0,700 Z"
+              fill="url(#lake)"
+            />
+
+            <path
+              d="M0,395 C180,365 350,395 520,375 C700,352 830,310 1000,325 C1110,335 1160,365 1200,360"
+              stroke="#86f2f0"
+              stroke-opacity="0.22"
+              stroke-width="3"
+              fill="none"
+            />
+
+            <g opacity="0.95">
+              <path
+                d="M130,420 C220,255 380,185 600,185 C820,185 980,255 1070,420"
+                fill="none"
+                stroke="#d7e4ff"
+                stroke-opacity="0.65"
+                stroke-width="10"
+              />
+
+              <path
+                d="M170,420 C255,290 400,230 600,230 C800,230 945,290 1030,420"
+                fill="none"
+                stroke="#d7e4ff"
+                stroke-opacity="0.35"
+                stroke-width="6"
+              />
+
+              <path d="M120,420 L1080,420" stroke="#f2f6ff" stroke-opacity="0.25" stroke-width="14" />
+
+              <g stroke="#f2f6ff" stroke-opacity="0.22" stroke-width="3">
+                <path d="M220,420 L220,340" />
+                <path d="M300,420 L300,305" />
+                <path d="M380,420 L380,275" />
+                <path d="M460,420 L460,252" />
+                <path d="M540,420 L540,235" />
+                <path d="M620,420 L620,235" />
+                <path d="M700,420 L700,252" />
+                <path d="M780,420 L780,275" />
+                <path d="M860,420 L860,305" />
+                <path d="M940,420 L940,340" />
+              </g>
+            </g>
+
+            <rect y="330" width="1200" height="150" fill="url(#mist)" />
+          </svg>
+          <div class="hero-noise" aria-hidden="true"></div>
+        </div>
+
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="hero-eyebrow">פאה שהיא את</p>
+            <h1 class="hero-title">פאות בעבודת יד, מראה טבעי ונוחות יומיומית.</h1>
+            <p class="hero-lede">
+              ליווי אישי משיחת היכרות ועד התאמה מושלמת — בבחירת סוג שיער, צפיפות, גוון, תספורת וסטיילינג.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">לתיאום שיחה</a>
+              <a class="btn btn-ghost" href="#gallery">לצפייה בגלריה</a>
+            </div>
+
+            <div class="hero-badges" aria-label="נקודות מפתח">
+              <div class="badge">התאמה אישית מלאה</div>
+              <div class="badge">גימור טבעי</div>
+              <div class="badge">חומרים איכותיים</div>
+            </div>
+          </div>
+
+          <aside class="hero-card" aria-label="פרטי שירות">
+            <div class="hero-card-title">מה מקבלים?</div>
+            <ul class="checklist">
+              <li>ייעוץ והתאמה לפי מבנה פנים וסגנון</li>
+              <li>בחירת שיער וגוון מדויקים</li>
+              <li>הנחיות תחזוקה והדרכה לשימוש</li>
+              <li>אפשרות לסטיילינג ותספורת</li>
+            </ul>
+            <div class="hero-card-footnote">זמינות לפגישות בתיאום מראש.</div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>גלריה</h2>
+            <p>דוגמאות לסגנונות, טקסטורות וגוונים. לחצי על תמונה להגדלה.</p>
+          </div>
+
+          <div class="gallery" role="list">
+            <button class="gallery-item" type="button" role="listitem" data-full="./assets/gallery-1.svg">
+              <img src="./assets/gallery-1.svg" alt="פאה בסגנון טבעי — גוון חום חם" loading="lazy" />
+              <span class="gallery-caption">טבעי • חום חם</span>
+            </button>
+            <button class="gallery-item" type="button" role="listitem" data-full="./assets/gallery-2.svg">
+              <img src="./assets/gallery-2.svg" alt="פאה ארוכה — תנועה רכה" loading="lazy" />
+              <span class="gallery-caption">ארוכה • תנועה רכה</span>
+            </button>
+            <button class="gallery-item" type="button" role="listitem" data-full="./assets/gallery-3.svg">
+              <img src="./assets/gallery-3.svg" alt="פאה בינונית — שכבות" loading="lazy" />
+              <span class="gallery-caption">בינונית • שכבות</span>
+            </button>
+            <button class="gallery-item" type="button" role="listitem" data-full="./assets/gallery-4.svg">
+              <img src="./assets/gallery-4.svg" alt="פאה קצרה — קלאסי" loading="lazy" />
+              <span class="gallery-caption">קצרה • קלאסי</span>
+            </button>
+            <button class="gallery-item" type="button" role="listitem" data-full="./assets/gallery-5.svg">
+              <img src="./assets/gallery-5.svg" alt="פאה בלונד כהה — לוק טבעי" loading="lazy" />
+              <span class="gallery-caption">בלונד כהה • טבעי</span>
+            </button>
+            <button class="gallery-item" type="button" role="listitem" data-full="./assets/gallery-6.svg">
+              <img src="./assets/gallery-6.svg" alt="פאה מתולתלת — נפח" loading="lazy" />
+              <span class="gallery-caption">תלתלים • נפח</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-muted">
+        <div class="container">
+          <div class="section-head">
+            <h2>אודות</h2>
+            <p>קצת על התהליך והגישה.</p>
+          </div>
+
+          <div class="cols">
+            <div class="card">
+              <h3>מי אני</h3>
+              <p>
+                אני מרים רוטנברג, מתמחה בייצור פאות פרימיום בהתאמה אישית. המטרה שלי היא ליצור פאה שנראית טבעית,
+                מרגישה נוחה, ומשתלבת בחיים שלך בלי מאמץ.
+              </p>
+            </div>
+            <div class="card">
+              <h3>איך זה עובד</h3>
+              <ol class="steps">
+                <li>שיחת היכרות קצרה והבנת הצרכים</li>
+                <li>בחירת שיער, גוון, צפיפות וקו קדמי</li>
+                <li>התאמה, תספורת וסטיילינג לפי הרצון שלך</li>
+                <li>מסירה + הדרכה לתחזוקה נכונה</li>
+              </ol>
+            </div>
+            <div class="card">
+              <h3>מה חשוב לי</h3>
+              <ul class="bullets">
+                <li>דיוק בפרטים הקטנים</li>
+                <li>שקיפות מלאה לאורך הדרך</li>
+                <li>אסתטיקה עדינה וטבעית</li>
+                <li>שירות חם ונעים</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>מחירים</h2>
+            <p class="price-note">החל מ־<strong>₪9,000</strong> — <span class="dream">הפאה החלומות שלך</span>.</p>
+          </div>
+
+          <div class="pricing">
+            <article class="price-card">
+              <div class="price-header">
+                <h3>בסיס</h3>
+                <div class="price">מ־₪9,000</div>
+              </div>
+              <ul>
+                <li>ייעוץ והתאמה אישית</li>
+                <li>בחירת גוון וצפיפות</li>
+                <li>גימור טבעי</li>
+              </ul>
+            </article>
+
+            <article class="price-card featured" aria-label="המסלול המומלץ">
+              <div class="price-tag">מומלץ</div>
+              <div class="price-header">
+                <h3>פרימיום</h3>
+                <div class="price">תמחור לפי התאמה</div>
+              </div>
+              <ul>
+                <li>בחירת שיער וגוון מדויקים במיוחד</li>
+                <li>תספורת וסטיילינג</li>
+                <li>הדרכת תחזוקה</li>
+              </ul>
+            </article>
+
+            <article class="price-card">
+              <div class="price-header">
+                <h3>סטיילינג / התאמות</h3>
+                <div class="price">לפי צורך</div>
+              </div>
+              <ul>
+                <li>תספורת / שכבות</li>
+                <li>ריענון מראה</li>
+                <li>התאמות נוחות</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="fineprint">
+            המחיר הסופי נקבע לפי סוג השיער, צפיפות, אורך, בסיס, ושירותים נלווים. הצעת מחיר מדויקת לאחר שיחת התאמה.
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section section-muted">
+        <div class="container">
+          <div class="section-head">
+            <h2>לקוחות ממליצים</h2>
+            <p>כמה מילים מנשים שכבר מצאו את “הנכון” שלהן.</p>
+          </div>
+
+          <div class="testimonials">
+            <figure class="quote">
+              <blockquote>
+                “הפאה נראית טבעית ברמה שלא האמנתי. מרים הייתה סבלנית, מקצועית, וידעה בדיוק לכוון למה שחיפשתי.”
+              </blockquote>
+              <figcaption>— ש׳, ירושלים</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>
+                “התהליך היה נעים ומדויק. קיבלתי הדרכה ברורה לתחזוקה, והפאה יושבת מושלם גם אחרי יום ארוך.”
+              </blockquote>
+              <figcaption>— ר׳, בני ברק</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>“הגימור בקו הקדמי פשוט מושלם. קיבלתי אינסוף מחמאות, ואני מרגישה הכי אני.”</blockquote>
+              <figcaption>— מ׳, בית שמש</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>צור קשר</h2>
+            <p>כתבי לי ונחזור אלייך לתיאום שיחה/פגישה.</p>
+          </div>
+
+          <div class="contact">
+            <form class="contact-form" id="contactForm" autocomplete="on">
+              <div class="field">
+                <label for="name">שם מלא</label>
+                <input id="name" name="name" type="text" placeholder="איך לקרוא לך?" required />
+              </div>
+
+              <div class="field">
+                <label for="phone">טלפון</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  inputmode="tel"
+                  placeholder="050-0000000"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="message">הודעה</label>
+                <textarea id="message" name="message" rows="5" placeholder="איזה סגנון את אוהבת?"></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">שליחה במייל</button>
+                <a class="btn btn-ghost" id="callLink" href="tel:+972500000000">התקשרי עכשיו</a>
+              </div>
+
+              <p class="form-hint">
+                בלחיצה על “שליחה במייל” ייפתח מייל מוכן מראש. ניתן לעדכן את כתובת המייל בקובץ `script.js`.
+              </p>
+            </form>
+
+            <div class="contact-card" aria-label="פרטי התקשרות">
+              <div class="contact-card-title">פרטים</div>
+              <div class="contact-row">
+                <span class="contact-label">שם</span>
+                <span class="contact-value">Miriam Rotenberg</span>
+              </div>
+              <div class="contact-row">
+                <span class="contact-label">שעות</span>
+                <span class="contact-value">א׳–ה׳ • בתיאום מראש</span>
+              </div>
+              <div class="contact-row">
+                <span class="contact-label">אזור</span>
+                <span class="contact-value">לפי תיאום</span>
+              </div>
+
+              <div class="contact-quick">
+                <a class="pill" id="emailQuick" href="#" rel="noopener">Email</a>
+                <a class="pill" id="instagramQuick" href="#" rel="noopener">Instagram</a>
+                <a class="pill" id="mapsQuick" href="#" rel="noopener">Google Maps</a>
+              </div>
+
+              <div class="contact-note">
+                אפשר לחבר טופס “שליחה אמיתית” דרך שרת/CRM בהמשך — כרגע הדף פותח מייל מוכן מראש לשליחה מהירה.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> Miriam Rotenberg</div>
+        <div class="footer-links">
+          <a href="#gallery">גלריה</a>
+          <a href="#pricing">מחירים</a>
+          <a href="#contact">צור קשר</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="סגירה">×</button>
+      <img class="lightbox-img" alt="" />
+      <div class="lightbox-caption" aria-live="polite"></div>
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>

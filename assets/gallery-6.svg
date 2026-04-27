@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Placeholder ����� 6">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0b1a2b"/>
+      <stop offset="55%" stop-color="#103152"/>
+      <stop offset="100%" stop-color="#3ce0d7"/>
+    </linearGradient>
+    <radialGradient id="r" cx="28%" cy="20%" r="72%">
+      <stop offset="0%" stop-color="#9aa7ff" stop-opacity=".35"/>
+      <stop offset="100%" stop-color="#9aa7ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <rect width="1200" height="900" fill="url(#r)"/>
+  <path d="M0,615 C220,575 390,605 560,585 C720,566 840,520 990,535 C1100,545 1160,570 1200,562 L1200,900 L0,900 Z" fill="#07243a" opacity=".64"/>
+  <path d="M0,700 C250,670 450,715 640,695 C820,675 940,650 1110,665 C1160,670 1185,678 1200,675 L1200,900 L0,900 Z" fill="#0a3b57" opacity=".72"/>
+  <path d="M170,670 C280,505 430,448 600,448 C770,448 920,505 1030,670" fill="none" stroke="#d7e4ff" stroke-opacity=".5" stroke-width="10"/>
+  <path d="M115,670 L1085,670" stroke="#f2f6ff" stroke-opacity=".23" stroke-width="14"/>
+  <text x="600" y="430" text-anchor="middle" font-family="Heebo, Arial, sans-serif" font-size="44" fill="#eaf2ff" fill-opacity=".92">����� ������</text>
+  <text x="600" y="485" text-anchor="middle" font-family="Heebo, Arial, sans-serif" font-size="28" fill="#eaf2ff" fill-opacity=".76">������ " ���</text>
+</svg>
