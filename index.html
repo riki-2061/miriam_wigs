@@ -358,12 +358,14 @@
               </div>
 
               <div class="form-actions">
-                <button class="btn btn-primary" type="submit">שליחה במייל</button>
+                <button class="btn btn-primary" type="submit" id="contactSubmit">שליחה</button>
                 <a class="btn btn-ghost" id="callLink" href="tel:+972500000000">התקשרי עכשיו</a>
               </div>
 
+              <div class="form-status" id="contactStatus" aria-live="polite"></div>
+
               <p class="form-hint">
-                בלחיצה על “שליחה במייל” ייפתח מייל מוכן מראש. ניתן לעדכן את כתובת המייל בקובץ `script.js`.
+                בלחיצה על “שליחה” הפנייה נשלחת ישירות מהאתר למייל שלך.
               </p>
             </form>
 
@@ -389,7 +391,7 @@
               </div>
 
               <div class="contact-note">
-                אפשר לחבר טופס “שליחה אמיתית” דרך שרת/CRM בהמשך — כרגע הדף פותח מייל מוכן מראש לשליחה מהירה.
+                הטופס שולח פנייה ישירות למייל דרך שרת (ללא פתיחת Gmail).
               </div>
             </div>
           </div>

@@ -17,9 +17,18 @@ python -m http.server 5500
 
 בקובץ `script.js` חפשי את האובייקט `CONTACT` ועדכני:
 
-- `emailTo`: כתובת המייל לקבלת פניות (למשל `miriam@domain.co.il`)
 - `phoneE164`: מספר טלפון בפורמט בינלאומי (למשל `+9725XXXXXXXX`)
 - `instagramUrl`, `mapsUrl`: קישורים אם יש
+
+## שליחת “צור קשר” ישירות למייל (ב־Vercel)
+
+הטופס שולח ל־`/api/contact` (פונקציית Serverless ב־Vercel) ומשם נשלח מייל דרך Resend.
+
+כדי שזה יעבוד בפרודקשן צריך להגדיר ב־Vercel → Project → Settings → Environment Variables:
+
+- `RESEND_API_KEY`: המפתח מ־Resend
+- `CONTACT_EMAIL_TO`: כתובת המייל לקבלת פניות (למשל `riki2061@gmail.com`)
+- `CONTACT_EMAIL_FROM` (אופציונלי): כתובת “From” מאומתת ב־Resend. אם לא מגדירים, משתמשים ב־`onboarding@resend.dev`.
 
 ## החלפת תמונות בגלריה
 

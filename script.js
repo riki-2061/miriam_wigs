@@ -1,5 +1,4 @@
 const CONTACT = {
-  emailTo: "miriam@example.com",
   phoneE164: "+972500000000",
   phoneDisplay: "050-0000000",
   instagramUrl: "https://instagram.com/",
@@ -14,22 +13,25 @@ function $all(selector, root = document) {
   return Array.from(root.querySelectorAll(selector));
 }
 
-function buildMailtoUrl({ name, phone, message }) {
-  const subject = "פנייה מהאתר — Miriam Rotenberg";
-  const lines = [
-    "היי מרים, אשמח לתיאום שיחה/פגישה לגבי פאה.",
-    "",
-    name ? `שם: ${name}` : null,
-    phone ? `טלפון: ${phone}` : null,
-    message ? `הודעה: ${message}` : null,
-  ].filter(Boolean);
-
-  const body = lines.join("\n");
-  const params = new URLSearchParams({
-    subject,
-    body,
+async function postContact({ name, phone, message }) {
+  const res = await fetch("/api/contact", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ name, phone, message }),
   });
-  return `mailto:${CONTACT.emailTo}?${params.toString()}`;
+
+  const isJson = (res.headers.get("content-type") || "").includes("application/json");
+  const payload = isJson ? await res.json().catch(() => null) : null;
+
+  if (!res.ok) {
+    const msg =
+      payload?.error ||
+      payload?.message ||
+      "השליחה נכשלה. נסי שוב בעוד רגע או צרי קשר טלפונית.";
+    throw new Error(msg);
+  }
+
+  return payload;
 }
 
 function setupYear() {
@@ -111,12 +113,12 @@ function setupContact() {
   const emailQuick = $("#emailQuick");
   const igQuick = $("#instagramQuick");
   const mapsQuick = $("#mapsQuick");
+  const submitBtn = $("#contactSubmit");
+  const statusEl = $("#contactStatus");
 
   if (callLink) callLink.href = `tel:${CONTACT.phoneE164}`;
 
-  if (emailQuick) {
-    emailQuick.href = buildMailtoUrl({ name: "", phone: "", message: "" });
-  }
+  if (emailQuick) emailQuick.style.display = "none";
   if (igQuick) {
     igQuick.href = CONTACT.instagramUrl;
     igQuick.target = "_blank";
@@ -128,15 +130,40 @@ function setupContact() {
 
   if (!form) return;
 
-  form.addEventListener("submit", (e) => {
+  function setStatus(text, type) {
+    if (!statusEl) return;
+    statusEl.textContent = text || "";
+    statusEl.classList.remove("is-success", "is-error");
+    if (type === "success") statusEl.classList.add("is-success");
+    if (type === "error") statusEl.classList.add("is-error");
+  }
+
+  function setBusy(isBusy) {
+    if (!submitBtn) return;
+    submitBtn.disabled = isBusy;
+    submitBtn.textContent = isBusy ? "שולח..." : "שליחה";
+  }
+
+  setStatus("מלאי פרטים ושלחי — הפנייה תישלח ישירות למייל.", "neutral");
+
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const formData = new FormData(form);
     const name = String(formData.get("name") || "").trim();
     const phone = String(formData.get("phone") || "").trim();
     const message = String(formData.get("message") || "").trim();
 
-    const url = buildMailtoUrl({ name, phone, message });
-    window.location.href = url;
+    try {
+      setBusy(true);
+      setStatus("שולח את הפנייה...", "neutral");
+      await postContact({ name, phone, message });
+      setStatus("נשלח בהצלחה. נחזור אלייך בהקדם.", "success");
+      form.reset();
+    } catch (err) {
+      setStatus(err instanceof Error ? err.message : "השליחה נכשלה.", "error");
+    } finally {
+      setBusy(false);
+    }
   });
 }
 
