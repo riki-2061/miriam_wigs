@@ -382,7 +382,7 @@ img {
 /* About: main text + portrait (2nd in DOM = physical left in RTL) */
 .about-split {
   display: grid;
-  grid-template-columns: 1fr minmax(200px, 300px);
+  grid-template-columns: 1fr minmax(200px, 280px);
   gap: 32px;
   align-items: start;
 }
@@ -395,11 +395,12 @@ img {
   margin: 0;
 }
 
-/* Align portrait flush to viewport left (RTL: physical left = inline-end) */
+/* Desktop: keep modest width (like original column), hug physical left inside grid cell (RTL: inline-end) */
 @media (min-width: 921px) {
   #about .about-portrait {
-    /* Same horizontal inset as .container: centered block uses (100vw − width) / 2 */
-    margin-inline-end: calc((min(1120px, 100vw - 40px) - 100vw) / 2);
+    max-width: 260px;
+    width: 100%;
+    justify-self: end;
   }
 }
 
