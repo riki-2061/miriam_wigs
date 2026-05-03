@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-label="��� ���� ���� ������">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8f3ec"/>
+      <stop offset="45%" stop-color="#f1e7da"/>
+      <stop offset="100%" stop-color="#e9dccd"/>
+    </linearGradient>
+    <linearGradient id="strandA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c2a77a" stop-opacity="0.10"/>
+      <stop offset="45%" stop-color="#d8c1a0" stop-opacity="0.52"/>
+      <stop offset="100%" stop-color="#b2925f" stop-opacity="0.10"/>
+    </linearGradient>
+    <linearGradient id="strandB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="18%" r="50%">
+      <stop offset="0%" stop-color="#fff9f0" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#fff9f0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#glow)"/>
+
+  <g fill="none" stroke-linecap="round">
+    <path d="M-100,830 C280,560 650,930 1080,710 C1420,535 1660,620 2020,455" stroke="url(#strandA)" stroke-width="34"/>
+    <path d="M-60,770 C300,520 720,860 1130,650 C1470,480 1720,565 2000,410" stroke="url(#strandB)" stroke-width="16"/>
+    <path d="M-120,910 C260,700 610,990 1030,810 C1410,645 1690,730 2050,600" stroke="url(#strandA)" stroke-width="24"/>
+
+    <path d="M-140,620 C210,390 530,680 940,510 C1300,360 1610,430 2010,280" stroke="url(#strandA)" stroke-width="20"/>
+    <path d="M-120,560 C260,330 600,640 980,460 C1350,300 1650,390 2040,245" stroke="url(#strandB)" stroke-width="10"/>
+    <path d="M-60,510 C330,300 690,600 1060,420 C1390,265 1680,345 2010,220" stroke="url(#strandA)" stroke-width="14"/>
+
+    <path d="M-180,420 C180,220 490,520 870,370 C1220,230 1540,285 1960,150" stroke="url(#strandB)" stroke-width="8"/>
+    <path d="M-150,350 C240,180 540,430 920,305 C1270,190 1570,240 2010,120" stroke="url(#strandA)" stroke-width="11"/>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-label="��� ���� ��� �����">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#17130f"/>
+      <stop offset="52%" stop-color="#221a14"/>
+      <stop offset="100%" stop-color="#2c2219"/>
+    </linearGradient>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.42"/>
+    </radialGradient>
+    <linearGradient id="goldA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c6a56d" stop-opacity="0.07"/>
+      <stop offset="48%" stop-color="#f1d8aa" stop-opacity="0.58"/>
+      <stop offset="100%" stop-color="#b68f55" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="goldB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.03"/>
+      <stop offset="45%" stop-color="#fff0d3" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+
+  <g fill="none" stroke-linecap="round">
+    <path d="M-160,860 C260,560 650,950 1110,700 C1480,500 1740,600 2060,410" stroke="url(#goldA)" stroke-width="34"/>
+    <path d="M-140,780 C260,520 700,880 1140,640 C1510,450 1780,560 2080,390" stroke="url(#goldB)" stroke-width="15"/>
+    <path d="M-190,960 C250,700 620,1030 1060,820 C1460,630 1760,730 2080,570" stroke="url(#goldA)" stroke-width="25"/>
+
+    <path d="M-180,640 C230,390 560,700 980,500 C1360,320 1680,430 2080,250" stroke="url(#goldA)" stroke-width="21"/>
+    <path d="M-170,560 C220,300 620,630 1030,430 C1400,250 1720,350 2100,185" stroke="url(#goldB)" stroke-width="11"/>
+    <path d="M-130,490 C300,250 700,590 1090,390 C1460,220 1770,320 2120,160" stroke="url(#goldA)" stroke-width="14"/>
+
+    <path d="M-200,390 C230,170 610,520 1010,320 C1410,130 1770,255 2140,95" stroke="url(#goldB)" stroke-width="9"/>
+    <path d="M-160,320 C230,120 620,430 1020,250 C1420,90 1750,190 2100,70" stroke="url(#goldA)" stroke-width="11"/>
+  </g>
+
+  <rect width="1920" height="1080" fill="url(#vignette)"/>
+</svg>
