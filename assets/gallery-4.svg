@@ -1,21 +1,86 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Placeholder ����� 4">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Short classic bob wig, natural hair tones">
   <defs>
-    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#071423"/>
-      <stop offset="55%" stop-color="#103152"/>
-      <stop offset="100%" stop-color="#1aa6a8"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5efe6"/>
+      <stop offset="50%" stop-color="#ebe3d7"/>
+      <stop offset="100%" stop-color="#e2d8cb"/>
     </linearGradient>
-    <radialGradient id="r" cx="30%" cy="25%" r="70%">
-      <stop offset="0%" stop-color="#ffe8b3" stop-opacity=".55"/>
-      <stop offset="100%" stop-color="#ffe8b3" stop-opacity="0"/>
+    <radialGradient id="spot" cx="50%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="hairBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a372c"/>
+      <stop offset="35%" stop-color="#5c4336"/>
+      <stop offset="65%" stop-color="#4d392f"/>
+      <stop offset="100%" stop-color="#3d2e26"/>
+    </linearGradient>
+    <linearGradient id="hairLight" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#8b7264" stop-opacity="0.85"/>
+      <stop offset="45%" stop-color="#c9b5a8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#5a463c" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="hairShine" x1="40%" y1="15%" x2="60%" y2="85%">
+      <stop offset="0%" stop-color="#d9cfc5" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ece5dd" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#d9cfc5" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
-  <rect width="1200" height="900" fill="url(#g)"/>
-  <rect width="1200" height="900" fill="url(#r)"/>
-  <path d="M0,625 C250,580 420,610 600,590 C770,572 890,532 1035,545 C1125,553 1175,577 1200,570 L1200,900 L0,900 Z" fill="#07243a" opacity=".64"/>
-  <path d="M0,705 C250,675 450,715 640,695 C820,675 940,650 1110,665 C1160,670 1185,678 1200,675 L1200,900 L0,900 Z" fill="#0a3b57" opacity=".72"/>
-  <path d="M175,675 C285,515 430,460 600,460 C770,460 915,515 1025,675" fill="none" stroke="#d7e4ff" stroke-opacity=".5" stroke-width="10"/>
-  <path d="M120,675 L1080,675" stroke="#f2f6ff" stroke-opacity=".23" stroke-width="14"/>
-  <text x="600" y="435" text-anchor="middle" font-family="Heebo, Arial, sans-serif" font-size="44" fill="#eaf2ff" fill-opacity=".92">����� ������</text>
-  <text x="600" y="490" text-anchor="middle" font-family="Heebo, Arial, sans-serif" font-size="28" fill="#eaf2ff" fill-opacity=".76">���� " �����</text>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect width="1200" height="900" fill="url(#spot)"/>
+
+  <!-- subtle shoulders / neck -->
+  <ellipse cx="600" cy="780" rx="220" ry="90" fill="#d8cfc4" opacity="0.35"/>
+  <path d="M480 820 Q600 740 720 820 L720 900 L480 900 Z" fill="#cdbaae" opacity="0.5"/>
+
+  <!-- main bob silhouette -->
+  <path
+    fill="url(#hairBase)"
+    d="M410 520 C410 320 520 200 600 200 C680 200 790 320 790 520 C790 620 750 700 600 720 C450 700 410 620 410 520 Z"
+  />
+  <path
+    fill="url(#hairLight)"
+    opacity="0.95"
+    d="M430 500 C430 330 525 220 600 220 C675 220 770 330 770 500 C770 590 735 665 600 685 C465 665 430 590 430 500 Z"
+  />
+
+  <!-- layered ends  classic blunt bob -->
+  <path
+    fill="#3d2e26"
+    fill-opacity="0.85"
+    d="M455 560 C480 640 540 695 600 698 C660 695 720 640 745 560 C755 585 760 615 755 645 C730 695 670 725 600 728 C530 725 470 695 445 645 C440 615 445 585 455 560 Z"
+  />
+
+  <!-- strand detail -->
+  <g fill="none" stroke="#6e584c" stroke-opacity="0.35" stroke-width="2" stroke-linecap="round">
+    <path d="M520 380 Q540 420 535 500"/>
+    <path d="M560 360 Q575 430 568 520"/>
+    <path d="M600 350 Q605 440 600 530"/>
+    <path d="M640 360 Q625 430 632 520"/>
+    <path d="M680 380 Q660 420 665 500"/>
+  </g>
+
+  <!-- highlight sweep -->
+  <ellipse cx="560" cy="380" rx="45" ry="120" fill="url(#hairShine)" transform="rotate(-8 560 380)" opacity="0.9"/>
+
+  <!-- natural hairline / lace suggestion -->
+  <path
+    fill="none"
+    stroke="#a89488"
+    stroke-opacity="0.45"
+    stroke-width="1.5"
+    d="M485 415 Q600 385 715 415"
+  />
+
+  <!-- face hint (very soft, no portrait) -->
+  <ellipse cx="600" cy="455" rx="95" ry="115" fill="#e8ddd4" opacity="0.25"/>
+
 </svg>
