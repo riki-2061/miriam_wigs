@@ -395,6 +395,14 @@ img {
   margin: 0;
 }
 
+/* Align portrait flush to viewport left (RTL: physical left = inline-end) */
+@media (min-width: 921px) {
+  #about .about-portrait {
+    /* Same horizontal inset as .container: centered block uses (100vw − width) / 2 */
+    margin-inline-end: calc((min(1120px, 100vw - 40px) - 100vw) / 2);
+  }
+}
+
 .about-portrait__frame {
   position: relative;
   padding: 10px;
