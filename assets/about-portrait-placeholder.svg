@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="500" viewBox="0 0 400 500" role="img" aria-label="���� ������ �����">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5f0e8"/>
+      <stop offset="100%" stop-color="#ebe4da"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c4a574"/>
+      <stop offset="50%" stop-color="#e8ddd4"/>
+      <stop offset="100%" stop-color="#a88962"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" rx="4" fill="url(#bg)"/>
+  <rect x="12" y="12" width="376" height="476" rx="2" fill="none" stroke="url(#edge)" stroke-width="2" opacity="0.55"/>
+  <rect x="24" y="24" width="352" height="452" rx="2" fill="none" stroke="#b59a68" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="6 8"/>
+  <text x="200" y="248" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#8a7a6c" fill-opacity="0.85">����� �����</text>
+  <text x="200" y="278" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#a89888" fill-opacity="0.75">������ ����� PNG �� JPG</text>
+</svg>
