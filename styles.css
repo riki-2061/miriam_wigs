@@ -400,7 +400,7 @@ img {
   content: "";
   position: absolute;
   inset: -12% -8%;
-  background: url("./assets/bg-section-hair.svg") center/cover no-repeat;
+  background: url("./assets/hero-hair-dark.svg") center/cover no-repeat;
   opacity: 0.94;
   pointer-events: none;
   z-index: 0;
