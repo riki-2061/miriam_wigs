@@ -379,6 +379,109 @@ img {
   border-bottom: 1px solid rgba(181, 154, 104, 0.14);
 }
 
+/* Hair-strand decorative background: About + Testimonials */
+#about.section-muted,
+#testimonials.section-muted {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-color: #f2e8dc;
+  background-image:
+    radial-gradient(1100px 650px at 85% 15%, rgba(181, 154, 104, 0.38), transparent 52%),
+    radial-gradient(950px 720px at 5% 85%, rgba(143, 122, 84, 0.22), transparent 48%),
+    radial-gradient(800px 500px at 50% 50%, rgba(223, 211, 191, 0.45), transparent 58%),
+    linear-gradient(165deg, rgba(255, 248, 238, 0.98) 0%, rgba(232, 218, 200, 0.94) 42%, rgba(245, 236, 224, 0.97) 100%);
+  border-top-color: rgba(143, 122, 84, 0.35);
+  border-bottom-color: rgba(143, 122, 84, 0.35);
+}
+
+#about.section-muted::before,
+#testimonials.section-muted::before {
+  content: "";
+  position: absolute;
+  inset: -12% -8%;
+  background: url("./assets/bg-section-hair.svg") center/cover no-repeat;
+  opacity: 0.94;
+  pointer-events: none;
+  z-index: 0;
+  mix-blend-mode: multiply;
+  filter: saturate(1.15) contrast(1.05);
+  will-change: transform, opacity;
+}
+
+#about.section-muted::after,
+#testimonials.section-muted::after {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  background:
+    radial-gradient(ellipse 55% 45% at 75% 25%, rgba(181, 154, 104, 0.42), transparent 72%),
+    radial-gradient(ellipse 50% 40% at 20% 75%, rgba(200, 175, 130, 0.35), transparent 68%);
+  opacity: 0.75;
+  pointer-events: none;
+  z-index: 0;
+  mix-blend-mode: soft-light;
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #about.section-muted::before,
+  #testimonials.section-muted::before {
+    animation:
+      hairDrift 16s ease-in-out infinite alternate,
+      hairPulse 9s ease-in-out infinite alternate;
+  }
+
+  #about.section-muted::after,
+  #testimonials.section-muted::after {
+    animation:
+      orbDrift 18s ease-in-out infinite alternate-reverse,
+      orbBreath 11s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes hairDrift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1.03) rotate(0deg);
+  }
+  to {
+    transform: translate3d(-3%, 2.5%, 0) scale(1.12) rotate(0.6deg);
+  }
+}
+
+@keyframes hairPulse {
+  from {
+    opacity: 0.88;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes orbDrift {
+  from {
+    transform: translate3d(2%, -1%, 0) scale(1);
+  }
+  to {
+    transform: translate3d(-4%, 3%, 0) scale(1.08);
+  }
+}
+
+@keyframes orbBreath {
+  from {
+    opacity: 0.55;
+  }
+  to {
+    opacity: 0.88;
+  }
+}
+
+#about.section-muted > .container,
+#testimonials.section-muted > .container {
+  position: relative;
+  z-index: 1;
+}
+
 .section-head {
   display: grid;
   gap: 10px;
@@ -913,6 +1016,12 @@ textarea:focus {
   .nav a,
   .lightbox {
     transition: none !important;
+  }
+  #about.section-muted::before,
+  #testimonials.section-muted::before,
+  #about.section-muted::after,
+  #testimonials.section-muted::after {
+    animation: none !important;
   }
 }
 
